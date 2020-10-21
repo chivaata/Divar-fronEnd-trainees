@@ -1,0 +1,28 @@
+.widgetsPage {
+  margin: 0 auto;
+  height: auto;
+  width: 600px;
+}
+
+.widget {
+  margin-right: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.widget-title {
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.widget-list-member {
+  width: 500px;
+  height: 30px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr 1fr;
+}
+
+.widget-listMember-title {
+  padding-right: 30px;
+}

@@ -1,6 +1,6 @@
 import React from "react";
-import "./App.css";
-import Widgets from "./widgets";
+import "./App.scss";
+import Widgets from "./Widgets";
 class App extends React.Component {
   render() {
     return (
