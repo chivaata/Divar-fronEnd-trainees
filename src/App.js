@@ -4,7 +4,7 @@ import Widgets from "./widgets";
 class App extends React.Component {
   render() {
     return (
-      <div>
+      <div className="app">
         <Widgets />
       </div>
     );
