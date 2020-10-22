@@ -1,6 +1,6 @@
 import React from "react";
 
-class Title extends React.Component {
+class Unexpandable extends React.Component {
   constructor(props) {
     super(props);
     this.componentDidMount = this.componentDidMount.bind(this);
@@ -27,10 +27,10 @@ class Title extends React.Component {
       return <div>...Loading...</div>;
     } else {
       return items.map((item) => {
-        if (item.widget_type === "TITLE_ROW") {
+        if (item.widget_type === "UNEXPANDABLE_ROW") {
           return (
             <div>
-              <div>{item.data.text}</div>
+              <div>{item.data.title}</div>
             </div>
           );
         }
@@ -39,4 +39,4 @@ class Title extends React.Component {
   }
 }
 
-export default Title;
+export default Unexpandable;
