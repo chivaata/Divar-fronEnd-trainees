@@ -1,4 +1,7 @@
 import React from "react";
+import "./Widgets_Service.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./fontawesome-library.js";
 
 class Score extends React.Component {
   constructor(props) {
@@ -30,7 +33,21 @@ class Score extends React.Component {
         if (item.widget_type === "SCORE_ROW") {
           return (
             <div>
-              <div>{item.data.title}</div>
+              <div className="score">
+                <div>
+                  <img
+                    className="image-logo"
+                    src={item.data.image_url}
+                    alt="logo"
+                  />
+                </div>
+                <div>{item.data.title}</div>
+                <div>score</div>
+                <div>
+                  <FontAwesomeIcon icon="angle-left" />
+                </div>
+              </div>
+              <hr />
             </div>
           );
         }

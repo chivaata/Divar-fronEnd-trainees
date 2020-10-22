@@ -30,7 +30,7 @@ class Title extends React.Component {
         if (item.widget_type === "TITLE_ROW") {
           return (
             <div>
-              <div>{item.data.text}</div>
+              <div style={{ color: "grey" }}>{item.data.text}</div>
             </div>
           );
         }

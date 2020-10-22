@@ -1,0 +1,23 @@
+.main_widgets {
+  height: auto;
+  width: 500px;
+  margin: 0 auto;
+  position: relative;
+  top: 50px;
+}
+
+.unexpandable {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+}
+
+.score {
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr 1fr;
+}
+
+.image-logo {
+  height: 25px;
+  width: 25px;
+  color: red;
+}

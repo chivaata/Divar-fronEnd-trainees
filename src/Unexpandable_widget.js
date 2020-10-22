@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Widgets_Service.scss";
 class Unexpandable extends React.Component {
   constructor(props) {
     super(props);
@@ -29,8 +29,9 @@ class Unexpandable extends React.Component {
       return items.map((item) => {
         if (item.widget_type === "UNEXPANDABLE_ROW") {
           return (
-            <div>
+            <div className="unexpandable">
               <div>{item.data.title}</div>
+              <div>{item.data.value}</div>
             </div>
           );
         }
