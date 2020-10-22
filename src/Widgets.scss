@@ -14,11 +14,12 @@
 .widget-title {
   margin-right: 0;
   font-weight: bold;
+  font-size: 22px;
 }
 
 .widget-list-member {
   width: 500px;
-  height: 30px;
+  height: 35px;
   display: grid;
   grid-template-columns: 1fr 6fr 2fr 1fr;
 }
