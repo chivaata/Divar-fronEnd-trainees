@@ -4,7 +4,8 @@ class Title extends React.Component {
   render() {
     return (
       <div>
-        <div style={{ color: "grey" }}>{this.props.text}</div>
+        <div>{this.props.text}</div>
+        <br />
       </div>
     );
   }

@@ -16,13 +16,12 @@
 .score {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 6fr 2fr 1fr;
-      grid-template-columns: 1fr 6fr 2fr 1fr;
+  -ms-grid-columns: 2fr 7fr 3fr 0.5fr;
+      grid-template-columns: 2fr 7fr 3fr 0.5fr;
 }
 
 .image-logo {
   height: 25px;
   width: 25px;
-  color: red;
 }
 /*# sourceMappingURL=Widgets_Service.css.map */

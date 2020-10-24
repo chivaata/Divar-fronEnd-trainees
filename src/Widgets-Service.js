@@ -32,22 +32,26 @@ class Widgets extends React.Component {
         </div>
       );
     } else {
-      return items.map((item) => {
-        if (item.widget_type === "TITLE_ROW") {
-          const text = item.data.text;
-          return <Title text={text} />;
-        }
-        if (item.widget_type === "UNEXPANDABLE_ROW") {
-          const text = item.data.title;
-          const value = item.data.value;
-          return <Unexpandable text={text} value={value} />;
-        }
-        if (item.widget_type === "SCORE_ROW") {
-          const title = item.data.title;
-          const logo = item.data.image_url;
-          return <Score title={title} logo={logo} />;
-        }
-      });
+      return (
+        <div className="main_widgets">
+          {items.map((item) => {
+            if (item.widget_type === "TITLE_ROW") {
+              const text = item.data.text;
+              return <Title text={text} />;
+            }
+            if (item.widget_type === "UNEXPANDABLE_ROW") {
+              const text = item.data.title;
+              const value = item.data.value;
+              return <Unexpandable text={text} value={value} />;
+            }
+            if (item.widget_type === "SCORE_ROW") {
+              const title = item.data.title;
+              const logo = item.data.image_url;
+              return <Score title={title} logo={logo} />;
+            }
+          })}
+        </div>
+      );
     }
   }
 }

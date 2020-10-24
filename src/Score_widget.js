@@ -14,7 +14,7 @@ class Score extends React.Component {
           <div>{this.props.title}</div>
           <div>score</div>
           <div>
-            <FontAwesomeIcon icon="angle-left" />
+            <FontAwesomeIcon icon="angle-left" style={{ color: "#898c8a" }} />
           </div>
         </div>
         <hr />
