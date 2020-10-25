@@ -8,6 +8,13 @@ $divider-color: #abb0ad;
   top: 50px;
 }
 
+@media only screen and (max-width: 600px) {
+  .main_widgets {
+    top: 20px;
+    width: 290px;
+  }
+}
+
 .unexpandable {
   display: grid;
   grid-template-columns: 5fr 1fr;
@@ -54,12 +61,18 @@ $divider-color: #abb0ad;
 .lessThan60 {
   @extend %percent;
   width: calc(60 / 100 * 45px);
-  background-color: yellow;
+  background-color: rgb(255, 196, 0);
 }
 
-.lessThan85 {
+.lessThan80 {
   @extend %percent;
-  width: calc(85 / 100 * 45px);
+  width: calc(80 / 100 * 45px);
+  background-color: rgb(217, 255, 0);
+}
+
+.lessThan90 {
+  @extend %percent;
+  width: calc(90 / 100 * 45px);
   background-color: rgb(157, 255, 0);
 }
 

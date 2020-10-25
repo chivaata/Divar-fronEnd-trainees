@@ -18,8 +18,11 @@ class Percent extends React.Component {
     if (45 < percent && percent <= 60) {
       return <div className="lessThan60"></div>;
     }
-    if (60 < percent && percent <= 75) {
-      return <div className="lessThan85"></div>;
+    if (60 < percent && percent <= 80) {
+      return <div className="lessThan80"></div>;
+    }
+    if (80 < percent && percent <= 90) {
+      return <div className="lessThan90"></div>;
     } else {
       return <div className="lessThan100"></div>;
     }
