@@ -28,7 +28,7 @@ class Widgets extends React.Component {
     if (!isLoaded) {
       return (
         <div>
-          <h1>...Loading...</h1>
+          <h1>...درحال‌بارگذاری </h1>
         </div>
       );
     } else {
@@ -47,7 +47,8 @@ class Widgets extends React.Component {
             if (item.widget_type === "SCORE_ROW") {
               const title = item.data.title;
               const logo = item.data.image_url;
-              return <Score title={title} logo={logo} />;
+              const percent = item.data.percentage_score;
+              return <Score title={title} logo={logo} percent={percent} />;
             }
           })}
         </div>

@@ -24,4 +24,45 @@
   height: 25px;
   width: 25px;
 }
+
+.divider {
+  border-top: 0.01em solid #abb0ad;
+}
+
+.lessThan15, .lessThan30, .lessThan45, .lessThan60, .lessThan85, .lessThan100 {
+  margin-top: 4px;
+  float: left;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.lessThan15 {
+  width: 6.75 px;
+  background-color: red;
+}
+
+.lessThan30 {
+  width: 13.5 px;
+  background-color: rgba(255, 81, 0, 0.884);
+}
+
+.lessThan45 {
+  width: 20.25 px;
+  background-color: red;
+}
+
+.lessThan60 {
+  width: 27 px;
+  background-color: yellow;
+}
+
+.lessThan85 {
+  width: 38.25 px;
+  background-color: #9dff00;
+}
+
+.lessThan100 {
+  width: 45 px;
+  background-color: green;
+}
 /*# sourceMappingURL=Widgets_Service.css.map */
