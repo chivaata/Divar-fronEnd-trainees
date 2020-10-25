@@ -17,6 +17,8 @@ class Score extends React.Component {
   }
   render() {
     const percent = this.props.percent;
+    const title = this.props.title;
+    const logo = this.props.logo;
     return (
       <>
         <div
@@ -28,9 +30,9 @@ class Score extends React.Component {
           }}
         >
           <div>
-            <img className="image-logo" src={this.props.logo} alt="logo" />
+            <img className="image-logo" src={logo} alt="logo" />
           </div>
-          <div>{this.props.title}</div>
+          <div>{title}</div>
           <div>
             <Percent percent={percent} />
           </div>
@@ -42,7 +44,7 @@ class Score extends React.Component {
           </div>
         </div>
         <hr className="divider" />
-        <Options show={this.state.isOptionOpen} />
+        <Options show={this.state.isOptionOpen} title={title} />
       </>
     );
   }

@@ -68,3 +68,11 @@ $divider-color: #abb0ad;
   width: calc(100 / 100 * 45px);
   background-color: green;
 }
+
+.option {
+  margin: 5px;
+  padding: 10px;
+  height: 60px;
+  border: 1px solid $divider-color;
+  border-radius: 5px;
+}
