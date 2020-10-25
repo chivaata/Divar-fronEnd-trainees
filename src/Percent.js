@@ -7,7 +7,7 @@ class Percent extends React.Component {
     console.log(percent);
 
     if (percent <= 15) {
-      return <div className="lessThan15"></div>;
+      return <div className="lessThan15">bisar</div>;
     }
     if (15 < percent && percent <= 30) {
       return <div className="lessThan30"></div>;
