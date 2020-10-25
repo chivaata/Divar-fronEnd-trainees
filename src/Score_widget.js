@@ -3,12 +3,30 @@ import "./Widgets_Service.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./fontawesome-library.js";
 import Percent from "./Percent";
+import Options from "./Options";
 class Score extends React.Component {
+  constructor(props) {
+    super(props);
+    this.showOption = this.showOption.bind(this);
+    this.state = {
+      isOptionOpen: false,
+    };
+  }
+  showOption() {
+    this.setState({ isOptionOpen: !this.state.isOptionOpen });
+  }
   render() {
     const percent = this.props.percent;
     return (
-      <div>
-        <div className="score">
+      <>
+        <div
+          className="score"
+          role="button"
+          onClick={(e) => {
+            this.showOption();
+            console.log("click");
+          }}
+        >
           <div>
             <img className="image-logo" src={this.props.logo} alt="logo" />
           </div>
@@ -24,7 +42,8 @@ class Score extends React.Component {
           </div>
         </div>
         <hr className="divider" />
-      </div>
+        <Options show={this.state.isOptionOpen} />
+      </>
     );
   }
 }

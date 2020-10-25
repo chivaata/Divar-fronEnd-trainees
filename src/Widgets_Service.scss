@@ -36,35 +36,35 @@ $divider-color: #abb0ad;
 
 .lessThan15 {
   @extend %percent;
-  width: (15/100 * 45) px;
+  width: calc(15 / 100 * 45px);
   background-color: red;
 }
 .lessThan30 {
   @extend %percent;
-  width: (30/100 * 45) px;
+  width: calc(30 / 100 * 45px);
   background-color: rgba(255, 81, 0, 0.884);
 }
 
 .lessThan45 {
   @extend %percent;
-  width: (45/100 * 45) px;
-  background-color: red;
+  width: calc(45 / 100 * 45px);
+  background-color: rgb(255, 145, 0);
 }
 
 .lessThan60 {
   @extend %percent;
-  width: (60/100 * 45) px;
+  width: calc(60 / 100 * 45px);
   background-color: yellow;
 }
 
 .lessThan85 {
   @extend %percent;
-  width: (85/100 * 45) px;
+  width: calc(85 / 100 * 45px);
   background-color: rgb(157, 255, 0);
 }
 
 .lessThan100 {
   @extend %percent;
-  width: (100/100 * 45) px;
+  width: calc(100 / 100 * 45px);
   background-color: green;
 }

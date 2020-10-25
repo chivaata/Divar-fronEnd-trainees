@@ -4,7 +4,7 @@ import "./Widgets_Service.scss";
 class Percent extends React.Component {
   render() {
     const percent = this.props.percent;
-    console.log(percent);
+    // console.log(percent);
 
     if (percent <= 15) {
       return <div className="lessThan15">bisar</div>;
