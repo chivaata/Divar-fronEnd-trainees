@@ -23,6 +23,7 @@ class Widgets extends React.Component {
         });
       });
   }
+
   render() {
     const { isLoaded, items } = this.state;
     if (!isLoaded) {
