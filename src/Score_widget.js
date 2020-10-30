@@ -4,26 +4,24 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./fontawesome-library.js";
 import Percent from "./Percent";
 import SubWidget from "./Sub_widget";
+
 class Score extends React.Component {
-  constructor(props) {
-    super(props);
-    this.showOption = this.showOption.bind(this);
-    this.showBody = this.showBody.bind(this);
-    this.state = {
-      isOptionOpen: false,
-      isBodyOpen: false,
-    };
-  }
-  showOption() {
+  state = {
+    isOptionOpen: false,
+    isBodyOpen: false,
+  };
+
+  showOption = () => {
     this.setState({ isOptionOpen: !this.state.isOptionOpen });
-  }
-  showBody() {
+  };
+
+  showBody = () => {
     this.setState({ isBodyOpen: !this.state.isBodyOpen });
-  }
+  };
+
   render() {
-    const percent = this.props.percent;
-    const title = this.props.title;
-    const logo = this.props.logo;
+    const { item, logo, title, percent } = this.props;
+    const { isBodyOpen, isOptionOpen } = this.state;
     return (
       <>
         <div
@@ -57,11 +55,9 @@ class Score extends React.Component {
           </div>
         </div>
         <hr className="divider" />
-        <SubWidget
-          show={this.state.isOptionOpen}
-          title={title}
-          body={this.state.isBodyOpen}
-        />
+        {(isBodyOpen || isOptionOpen) && (
+          <SubWidget title={title} item={item} />
+        )}
       </>
     );
   }

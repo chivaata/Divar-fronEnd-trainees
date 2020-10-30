@@ -14,7 +14,7 @@ class Widgets extends React.Component {
   }
 
   componentDidMount() {
-    fetch("http://localhost:3001/api/v1/widgets")
+    fetch("/api/v1/widgets/actions")
       .then((res) => res.json())
       .then((json) => {
         this.setState({
@@ -28,8 +28,8 @@ class Widgets extends React.Component {
     const { isLoaded, items } = this.state;
     if (!isLoaded) {
       return (
-        <div>
-          <h1>...درحال‌بارگذاری </h1>
+        <div className="loading">
+          <h1>درحال‌بارگذاری... </h1>
         </div>
       );
     } else {
@@ -49,7 +49,14 @@ class Widgets extends React.Component {
               const title = item.data.title;
               const logo = item.data.image_url;
               const percent = item.data.percentage_score;
-              return <Score title={title} logo={logo} percent={percent} />;
+              return (
+                <Score
+                  title={title}
+                  logo={logo}
+                  percent={percent}
+                  item={item}
+                />
+              );
             }
           })}
         </div>

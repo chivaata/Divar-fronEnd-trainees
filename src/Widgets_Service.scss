@@ -85,9 +85,16 @@ $divider-color: #abb0ad;
 .option {
   margin: 5px;
   padding: 10px;
-  height: auto;
+  height: 150px;
   border: 1px solid $divider-color;
   border-radius: 5px;
-  margin-bottom: 15px;
-  border-bottom: none;
+  margin-bottom: 20px;
+}
+
+.loading {
+  height: auto;
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  top: 100px;
 }
