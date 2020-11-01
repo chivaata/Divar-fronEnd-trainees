@@ -1,5 +1,5 @@
 import React from "react";
-import "./Widgets_Service.scss";
+import "./widgets.scss";
 class Unexpandable extends React.Component {
   render() {
     return (

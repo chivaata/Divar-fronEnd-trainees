@@ -1,8 +1,8 @@
 import React from "react";
-import "./Widgets_Service.scss";
+import "./widgets.scss";
 import Title from "./titleWidget";
-import Unexpandable from "./Unexpandable_widget";
-import Score from "./Score_widget";
+import Unexpandable from "./unexpandableWidget";
+import Score from "./scoreWidget";
 
 class Widgets extends React.Component {
   constructor(props) {

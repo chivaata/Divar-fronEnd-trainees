@@ -1,5 +1,5 @@
 import React from "react";
-import "./Widgets_Service.scss";
+import "./widgets.scss";
 
 class Percent extends React.Component {
   render() {

@@ -1,9 +1,9 @@
 import React from "react";
-import "./Widgets_Service.scss";
+import "./widgets.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./fontawesome-library.js";
-import Percent from "./Percent";
-import SubWidget from "./Sub_widget";
+import "./fontawesomeLibrary.js";
+import Percent from "./percent";
+import SubWidget from "./subWidget";
 
 class Score extends React.Component {
   state = {

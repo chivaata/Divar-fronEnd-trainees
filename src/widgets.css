@@ -10,14 +10,14 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 5fr 1fr;
-      grid-template-columns: 5fr 1fr;
+  grid-template-columns: 5fr 1fr;
 }
 
 .score {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 2fr 7fr 3fr 0.5fr;
-      grid-template-columns: 2fr 7fr 3fr 0.5fr;
+  grid-template-columns: 2fr 7fr 3fr 0.5fr;
 }
 
 .image-logo {
@@ -29,7 +29,12 @@
   border-top: 0.01em solid #abb0ad;
 }
 
-.lessThan15, .lessThan30, .lessThan45, .lessThan60, .lessThan85, .lessThan100 {
+.lessThan15,
+.lessThan30,
+.lessThan45,
+.lessThan60,
+.lessThan85,
+.lessThan100 {
   margin-top: 4px;
   float: left;
   height: 10px;
