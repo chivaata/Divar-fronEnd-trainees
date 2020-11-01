@@ -1,6 +1,6 @@
 import React from "react";
 import "./Widgets_Service.scss";
-import Title from "./Title-widget";
+import Title from "./titleWidget";
 import Unexpandable from "./Unexpandable_widget";
 import Score from "./Score_widget";
 
