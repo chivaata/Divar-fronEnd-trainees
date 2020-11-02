@@ -1,6 +1,6 @@
 import React from "react";
 
-function Title(text) {
+function Title({ text }) {
   return (
     <div>
       <div>{text}</div>
